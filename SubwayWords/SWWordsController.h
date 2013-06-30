@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SWCell.h"
+#import "SWCourse.h"
 
 @interface SWWordsController : UITableViewController <CellSlideDelegate, UIActionSheetDelegate>
-- (id)initWithTitle:(NSString *)title;
+@property (readonly, strong, nonatomic) SWCourse * course;
+- (id)initWithCourse:(SWCourse *)course;
 @end

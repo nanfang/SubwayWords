@@ -31,6 +31,8 @@
 		2016A53D177C8ED200C75340 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2016A53C177C8ED200C75340 /* bg@2x.jpg */; };
 		2016A53F177C8F2A00C75340 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A53E177C8F2A00C75340 /* noise.png */; };
 		2016A541177C8F4800C75340 /* sliced_bg_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A540177C8F4800C75340 /* sliced_bg_green.png */; };
+		2016A5441780002C00C75340 /* SWCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A5431780002C00C75340 /* SWCourse.m */; };
+		2016A54E1780748200C75340 /* SWLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A54D1780748200C75340 /* SWLevel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,10 @@
 		2016A53C177C8ED200C75340 /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
 		2016A53E177C8F2A00C75340 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		2016A540177C8F4800C75340 /* sliced_bg_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliced_bg_green.png; sourceTree = "<group>"; };
+		2016A5421780002C00C75340 /* SWCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCourse.h; sourceTree = "<group>"; };
+		2016A5431780002C00C75340 /* SWCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCourse.m; sourceTree = "<group>"; };
+		2016A54C1780748200C75340 /* SWLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLevel.h; sourceTree = "<group>"; };
+		2016A54D1780748200C75340 /* SWLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLevel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,10 @@
 			children = (
 				2016A5391775913400C75340 /* SWWord.h */,
 				2016A53A1775913400C75340 /* SWWord.m */,
+				2016A5421780002C00C75340 /* SWCourse.h */,
+				2016A5431780002C00C75340 /* SWCourse.m */,
+				2016A54C1780748200C75340 /* SWLevel.h */,
+				2016A54D1780748200C75340 /* SWLevel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 				2016A52917756D9A00C75340 /* SWWordsController.m in Sources */,
 				2016A53517758E8300C75340 /* SWCell.m in Sources */,
 				2016A53B1775913400C75340 /* SWWord.m in Sources */,
+				2016A5441780002C00C75340 /* SWCourse.m in Sources */,
+				2016A54E1780748200C75340 /* SWLevel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

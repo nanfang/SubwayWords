@@ -14,13 +14,14 @@
 @end
 
 @implementation SWWordsController
+@synthesize course=_course;
 
-
-- (id)initWithTitle:(NSString *)title
+- (id)initWithCourse:(SWCourse *)course
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = title;
+        _course=course;
+        self.title = course.name;
     }
     return self;
 }
@@ -35,28 +36,47 @@
 {
     [super viewDidLoad];
 
-    UIBarButtonItem *levelLauncher = [[UIBarButtonItem alloc] initWithTitle:@"一级" style:UIBarButtonItemStylePlain
+    UIBarButtonItem *levelLauncher = [[UIBarButtonItem alloc] initWithTitle:@"级别" style:UIBarButtonItemStylePlain
                                                                      target: self
                                                                      action: @selector (showLevelSheet)];
     self.navigationItem.rightBarButtonItems = @[levelLauncher];
-    
-    
 }
+
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationItem.rightBarButtonItem.title = [NSString stringWithFormat:@"第%@级", [NSNumber numberWithInt:[self getCurrentLevel]], nil];
 }
+
+
+- (int)getCurrentLevel
+{
+    // get from NSUserDefault
+    return 1;
+}
+
 
 - (void)showLevelSheet
 {
+    NSArray * levels = [self.course allLevels];
+
+
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:@"选择级别"
                                   delegate:self
                                   cancelButtonTitle:@"取消"
                                   destructiveButtonTitle:nil
-                                  otherButtonTitles:@"一级", @"二级",nil];
+                                  otherButtonTitles:nil];
+    for(NSNumber * level in levels){
+        [actionSheet addButtonWithTitle:[NSString stringWithFormat:@"第%@级", level, nil]];
+    }
+    
+    
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    actionSheet.delegate = self;
     [actionSheet showInView:self.view];
 
 }
@@ -73,14 +93,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // TODO: Return the number of the words
-    return 50;
+    return [self.course currentLevelWords].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -88,7 +106,6 @@
     static NSString *CellIdentifier = @"SWCell";
     SWCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
     if (cell == nil) {
         cell = [[SWCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -98,11 +115,8 @@
         cell.textLabel.backgroundColor = [UIColor clearColor];
         cell.delegate = self;
     }
-    // TODO load word from db
-    SWWord * word = [[SWWord alloc]initWithWord:@"abandon" explain:@"vt.放弃, 遗弃 n.放任, 狂热 vt.放弃, 遗弃 n.放任, 狂热 vt.放弃, 遗弃 n.放任, 狂热" soundmark:@"" level:1];
-
-//    cell.textLabel.text = word.word;
-    cell.word = word;
+    
+    cell.word = [self.course currentLevelWords][indexPath.row];
     cell.hide = NO;
     cell.direction = CellSlideDirectionBoth;
     cell.textLabel.textColor = [UIColor whiteColor];
@@ -135,39 +149,11 @@
 }
 */
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0;
 }
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
-
-
 
 @end

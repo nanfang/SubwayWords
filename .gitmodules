@@ -1,3 +1,6 @@
 [submodule "lib/SESpringBoard"]
 	path = lib/SESpringBoard
 	url = git@github.com:nanfang/SESpringBoard.git
+[submodule "lib/ObjcUtils"]
+	path = lib/ObjcUtils
+	url = git@github.com:nanfang/ObjcUtils.git
