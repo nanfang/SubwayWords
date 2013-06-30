@@ -16,6 +16,21 @@
 		2016A4FD1775203C00C75340 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A4FC1775203C00C75340 /* Default.png */; };
 		2016A4FF1775203C00C75340 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A4FE1775203C00C75340 /* Default@2x.png */; };
 		2016A5011775203C00C75340 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A5001775203C00C75340 /* Default-568h@2x.png */; };
+		2016A51E1775431600C75340 /* btn_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A5171775431600C75340 /* btn_delete.png */; };
+		2016A51F1775431600C75340 /* SEMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A5191775431600C75340 /* SEMenuItem.m */; };
+		2016A5201775431600C75340 /* SESpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A51B1775431600C75340 /* SESpringBoard.m */; };
+		2016A5211775431600C75340 /* UIViewController+SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A51D1775431600C75340 /* UIViewController+SEViewController.m */; };
+		2016A5231775452600C75340 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2016A5221775452500C75340 /* QuartzCore.framework */; };
+		2016A52617754CEF00C75340 /* SWMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A52517754CEF00C75340 /* SWMainController.m */; };
+		2016A52917756D9A00C75340 /* SWWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A52817756D9A00C75340 /* SWWordsController.m */; };
+		2016A52C17757EA300C75340 /* navbtn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A52A17757EA300C75340 /* navbtn_home.png */; };
+		2016A52D17757EA300C75340 /* navbtn_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A52B17757EA300C75340 /* navbtn_home@2x.png */; };
+		2016A53217757F9B00C75340 /* ielts.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A53117757F9B00C75340 /* ielts.png */; };
+		2016A53517758E8300C75340 /* SWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A53417758E8300C75340 /* SWCell.m */; };
+		2016A53B1775913400C75340 /* SWWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A53A1775913400C75340 /* SWWord.m */; };
+		2016A53D177C8ED200C75340 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2016A53C177C8ED200C75340 /* bg@2x.jpg */; };
+		2016A53F177C8F2A00C75340 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A53E177C8F2A00C75340 /* noise.png */; };
+		2016A541177C8F4800C75340 /* sliced_bg_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2016A540177C8F4800C75340 /* sliced_bg_green.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +47,28 @@
 		2016A4FC1775203C00C75340 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2016A4FE1775203C00C75340 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2016A5001775203C00C75340 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2016A5171775431600C75340 /* btn_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_delete.png; sourceTree = "<group>"; };
+		2016A5181775431600C75340 /* SEMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEMenuItem.h; sourceTree = "<group>"; };
+		2016A5191775431600C75340 /* SEMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMenuItem.m; sourceTree = "<group>"; };
+		2016A51A1775431600C75340 /* SESpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESpringBoard.h; sourceTree = "<group>"; };
+		2016A51B1775431600C75340 /* SESpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESpringBoard.m; sourceTree = "<group>"; };
+		2016A51C1775431600C75340 /* UIViewController+SEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SEViewController.h"; sourceTree = "<group>"; };
+		2016A51D1775431600C75340 /* UIViewController+SEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SEViewController.m"; sourceTree = "<group>"; };
+		2016A5221775452500C75340 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2016A52417754CEF00C75340 /* SWMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMainController.h; sourceTree = "<group>"; };
+		2016A52517754CEF00C75340 /* SWMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMainController.m; sourceTree = "<group>"; };
+		2016A52717756D9A00C75340 /* SWWordsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWordsController.h; sourceTree = "<group>"; };
+		2016A52817756D9A00C75340 /* SWWordsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWordsController.m; sourceTree = "<group>"; };
+		2016A52A17757EA300C75340 /* navbtn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbtn_home.png; path = lib/SESpringBoard/SESpringBoardDemo/Icons/navbtn_home.png; sourceTree = SOURCE_ROOT; };
+		2016A52B17757EA300C75340 /* navbtn_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbtn_home@2x.png"; path = "lib/SESpringBoard/SESpringBoardDemo/Icons/navbtn_home@2x.png"; sourceTree = SOURCE_ROOT; };
+		2016A53117757F9B00C75340 /* ielts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ielts.png; sourceTree = "<group>"; };
+		2016A53317758E8300C75340 /* SWCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCell.h; sourceTree = "<group>"; };
+		2016A53417758E8300C75340 /* SWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCell.m; sourceTree = "<group>"; };
+		2016A5391775913400C75340 /* SWWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWord.h; sourceTree = "<group>"; };
+		2016A53A1775913400C75340 /* SWWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWord.m; sourceTree = "<group>"; };
+		2016A53C177C8ED200C75340 /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
+		2016A53E177C8F2A00C75340 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
+		2016A540177C8F4800C75340 /* sliced_bg_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliced_bg_green.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2016A5231775452600C75340 /* QuartzCore.framework in Frameworks */,
 				2016A4EB1775203C00C75340 /* UIKit.framework in Frameworks */,
 				2016A4ED1775203C00C75340 /* Foundation.framework in Frameworks */,
 				2016A4EF1775203C00C75340 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +89,7 @@
 		2016A4DE1775203C00C75340 = {
 			isa = PBXGroup;
 			children = (
+				2016A50717753F6200C75340 /* Lib */,
 				2016A4F01775203C00C75340 /* SubwayWords */,
 				2016A4E91775203C00C75340 /* Frameworks */,
 				2016A4E81775203C00C75340 /* Products */,
@@ -68,6 +107,7 @@
 		2016A4E91775203C00C75340 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2016A5221775452500C75340 /* QuartzCore.framework */,
 				2016A4EA1775203C00C75340 /* UIKit.framework */,
 				2016A4EC1775203C00C75340 /* Foundation.framework */,
 				2016A4EE1775203C00C75340 /* CoreGraphics.framework */,
@@ -78,6 +118,8 @@
 		2016A4F01775203C00C75340 /* SubwayWords */ = {
 			isa = PBXGroup;
 			children = (
+				2016A53817758F3200C75340 /* Views */,
+				2016A53617758F1C00C75340 /* Models */,
 				2016A4F91775203C00C75340 /* SWAppDelegate.h */,
 				2016A4FA1775203C00C75340 /* SWAppDelegate.m */,
 				2016A4F11775203C00C75340 /* Supporting Files */,
@@ -88,15 +130,74 @@
 		2016A4F11775203C00C75340 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2016A52E17757EAC00C75340 /* images */,
 				2016A4F21775203C00C75340 /* SubwayWords-Info.plist */,
 				2016A4F31775203C00C75340 /* InfoPlist.strings */,
 				2016A4F61775203C00C75340 /* main.m */,
 				2016A4F81775203C00C75340 /* SubwayWords-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2016A50717753F6200C75340 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2016A5161775431600C75340 /* SESpringBoard */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		2016A5161775431600C75340 /* SESpringBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2016A5171775431600C75340 /* btn_delete.png */,
+				2016A5181775431600C75340 /* SEMenuItem.h */,
+				2016A5191775431600C75340 /* SEMenuItem.m */,
+				2016A51A1775431600C75340 /* SESpringBoard.h */,
+				2016A51B1775431600C75340 /* SESpringBoard.m */,
+				2016A51C1775431600C75340 /* UIViewController+SEViewController.h */,
+				2016A51D1775431600C75340 /* UIViewController+SEViewController.m */,
+			);
+			name = SESpringBoard;
+			path = lib/SESpringBoard/SESpringBoardDemo/SESpringBoard;
+			sourceTree = "<group>";
+		};
+		2016A52E17757EAC00C75340 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2016A53C177C8ED200C75340 /* bg@2x.jpg */,
+				2016A540177C8F4800C75340 /* sliced_bg_green.png */,
+				2016A53E177C8F2A00C75340 /* noise.png */,
+				2016A53117757F9B00C75340 /* ielts.png */,
 				2016A4FC1775203C00C75340 /* Default.png */,
 				2016A4FE1775203C00C75340 /* Default@2x.png */,
 				2016A5001775203C00C75340 /* Default-568h@2x.png */,
+				2016A52A17757EA300C75340 /* navbtn_home.png */,
+				2016A52B17757EA300C75340 /* navbtn_home@2x.png */,
 			);
-			name = "Supporting Files";
+			name = images;
+			sourceTree = "<group>";
+		};
+		2016A53617758F1C00C75340 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2016A5391775913400C75340 /* SWWord.h */,
+				2016A53A1775913400C75340 /* SWWord.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2016A53817758F3200C75340 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2016A53317758E8300C75340 /* SWCell.h */,
+				2016A53417758E8300C75340 /* SWCell.m */,
+				2016A52417754CEF00C75340 /* SWMainController.h */,
+				2016A52517754CEF00C75340 /* SWMainController.m */,
+				2016A52717756D9A00C75340 /* SWWordsController.h */,
+				2016A52817756D9A00C75340 /* SWWordsController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +256,13 @@
 				2016A4FD1775203C00C75340 /* Default.png in Resources */,
 				2016A4FF1775203C00C75340 /* Default@2x.png in Resources */,
 				2016A5011775203C00C75340 /* Default-568h@2x.png in Resources */,
+				2016A51E1775431600C75340 /* btn_delete.png in Resources */,
+				2016A52C17757EA300C75340 /* navbtn_home.png in Resources */,
+				2016A52D17757EA300C75340 /* navbtn_home@2x.png in Resources */,
+				2016A53217757F9B00C75340 /* ielts.png in Resources */,
+				2016A53D177C8ED200C75340 /* bg@2x.jpg in Resources */,
+				2016A53F177C8F2A00C75340 /* noise.png in Resources */,
+				2016A541177C8F4800C75340 /* sliced_bg_green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +275,13 @@
 			files = (
 				2016A4F71775203C00C75340 /* main.m in Sources */,
 				2016A4FB1775203C00C75340 /* SWAppDelegate.m in Sources */,
+				2016A51F1775431600C75340 /* SEMenuItem.m in Sources */,
+				2016A5201775431600C75340 /* SESpringBoard.m in Sources */,
+				2016A5211775431600C75340 /* UIViewController+SEViewController.m in Sources */,
+				2016A52617754CEF00C75340 /* SWMainController.m in Sources */,
+				2016A52917756D9A00C75340 /* SWWordsController.m in Sources */,
+				2016A53517758E8300C75340 /* SWCell.m in Sources */,
+				2016A53B1775913400C75340 /* SWWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +396,7 @@
 				2016A5061775203C00C75340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

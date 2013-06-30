@@ -1,0 +1,3 @@
+[submodule "lib/SESpringBoard"]
+	path = lib/SESpringBoard
+	url = git@github.com:nanfang/SESpringBoard.git
