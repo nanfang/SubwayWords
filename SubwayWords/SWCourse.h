@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SWLevel.h"
 
 @interface SWCourse : NSObject
 @property(readonly,strong,nonatomic) NSString * name;
 @property(readonly,strong,nonatomic) NSString * image;
-@property(nonatomic) int currentLevel;
 
 - (id)initWithName:(NSString*)name image:(NSString*)image table:(NSString*)table;
+- (SWLevel*)currentUserLevel;
+- (void)switchUserLevel:(SWLevel*)level;
 
 - (NSArray*)allLevels;
 - (NSArray*)currentLevelWords;

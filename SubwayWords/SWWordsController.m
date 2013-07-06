@@ -47,38 +47,35 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    self.navigationItem.rightBarButtonItem.title = [NSString stringWithFormat:@"第%@级", [NSNumber numberWithInt:[self getCurrentLevel]], nil];
-}
-
-
-- (int)getCurrentLevel
-{
-    // get from NSUserDefault
-    return 1;
+    self.navigationItem.rightBarButtonItem.title = [self.course currentUserLevel].description;
 }
 
 
 - (void)showLevelSheet
 {
-    NSArray * levels = [self.course allLevels];
-
-
-    
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:@"选择级别"
                                   delegate:self
                                   cancelButtonTitle:@"取消"
                                   destructiveButtonTitle:nil
                                   otherButtonTitles:nil];
-    for(NSNumber * level in levels){
-        [actionSheet addButtonWithTitle:[NSString stringWithFormat:@"第%@级", level, nil]];
+    for(SWLevel * level in [self.course allLevels]){
+        [actionSheet addButtonWithTitle:level.description];
     }
-    
     
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
     actionSheet.delegate = self;
     [actionSheet showInView:self.view];
+}
 
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex > 0){
+        [self.course switchUserLevel:[self.course allLevels][buttonIndex-1]];
+        [self.tableView reloadData];
+        self.navigationItem.rightBarButtonItem.title = [self.course currentUserLevel].description;
+    }
 }
 
 
@@ -148,9 +145,6 @@
     }   
 }
 */
-
-
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0;
